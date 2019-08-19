@@ -1,4 +1,29 @@
-function validate(century, year, month, dayOfMonth) {
+function validate(century, year, month, dayOfMonth)
+  
+function initialiseNameCheck() {
+
+  var century = parseInt(document.getElementById("cc").value);
+  var year = parseInt(document.getElementById("yy").value);
+  var month = parseInt(document.getElementById("mm").value);
+  var dayOfMonth = parseInt(document.getElementById("dd").value);
+
+  if (document.getElementById("male").checked) {
+    var gender = document.getElementById("male").value
+
+  } else if (document.getElementById("female").checked) {
+    gender = document.getElementById("female").value
+    
+  }
+
+  console.log(gender)
+  if (validate(century, year, month, dayOfMonth)) {
+
+    let dayOfWeek = getDayOfWeek(century, year, month, dayOfMonth)
+    getNameResult(gender, dayOfWeek)
+
+  }
+}  
+  
   valid = true;
   if (century == "") {
     alert("Input the correct gender");
@@ -91,27 +116,5 @@ function getNameResult(gender, dayOfWeek) {
   }
 }
 
-function initialiseNameCheck() {
 
-  var century = parseInt(document.getElementById("cc").value);
-  var year = parseInt(document.getElementById("yy").value);
-  var month = parseInt(document.getElementById("mm").value);
-  var dayOfMonth = parseInt(document.getElementById("dd").value);
-
-  if (document.getElementById("male").checked) {
-    var gender = document.getElementById("male").value
-
-  } else if (document.getElementById("female").checked) {
-    gender = document.getElementById("female").value
-    
-  }
-
-  console.log(gender)
-  if (validate(century, year, month, dayOfMonth)) {
-
-    let dayOfWeek = getDayOfWeek(century, year, month, dayOfMonth)
-    getNameResult(gender, dayOfWeek)
-
-  }
-}
 
