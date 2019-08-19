@@ -1,14 +1,16 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="style.css/bootstrap.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AKAN NAME</title>
-      <link rel="stylesheet" href="style.css/bootstrap.css">
-
-
+    <!-- <link rel="stylesheet" href="style.css/bootstrap.css"> -->
 </head>
+
+
 <header class="main header" class="bg-sucess text-white p-4 mb-3">
     <div class="container">
         <h1 id="header-title">AKAN NAME </h1>
@@ -16,10 +18,9 @@
 </header>
 
 <body>
-    <script src="scripts.js/index.js"></script>
-     <div class="container">
-     <div class="Introduction">
- <p>
+    <div class="container">
+        <div class="Introduction">
+            <p>
                 Welcome to Back to my website.
                 Today ,we will do something <strong>different</strong><br>
 
@@ -28,47 +29,49 @@
                 name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day
                 names.
 
-          </p>
+            </p>
         </div>
     </div>
     <div class="container">
         <form>
-             <div class="century ">
-                Century <br>
-                <input type="text" placeholder="Enter the century" name="century" id="cc"><br>
+            <div class="century ">
+                Century (e.g. 19 if yr 1998)<br>
+                <input type="text" placeholder="Enter the century" name="century" id="cc" required min="0"
+                    max="100"><br>
             </div>
             <div class="year of birth">
-                Year of Birth <br>
-                <input type="text" placeholder="Enter year " name="Year of Birth" id="yy"><br>
+                Year of Birth (e.g. 98 if yr 1998)<br>
+                <input type="text" placeholder="Enter year " name="Year of Birth" id="yy" required min="0"
+                    max="2019"><br>
             </div>
-             <div class="Month of birth">
-              Month of Birth<br>
-                <input type="text" placeholder="Enter your month" name="Month of Birth" id="mm">
-             </div>
+            <div class="Month of birth">
+                Month of Birth<br>
+                <input type="text" placeholder="Enter your month" name="Month of Birth" id="mm" required min="0"
+                    max="12"><br>
+            </div>
             <div class="Day of Month">
-            Day of Month <br>
-          <input type="text" placeholder="Enter your Date" name="Date of Month" id="dd">
-         </div>
-           <div class="Your gender">
-              Your Gender
-                <input type="checkbox" name="gender" value="male" id="male">male
-                <input type="checkbox" name="gender" value="female" id="female">female<br>
-               </div>
-            <div class="button">
-                <button  type="button" onclick="akanNames(); ")>Submit</button>
+                Day of Month <br>
+                <input type="text" placeholder="Enter your Date" name="Date of Month" id="dd" required min="0" max="12">
             </div>
+            <div class="Your gender" id="gender">
+                Your Gender
+                <input type="radio" name="gender" value="male" id="male"> Male<br>
+                <input type="radio" name="gender" value="female" id="female"> Female<br>
+            </div>
+            <div class="button">
+                <button type="button" onclick="initialiseNameCheck()">Submit</button>
+            </div>
+        </form>
 
-            <div class="result"></div>
 
     </div>
 
-    </form>
+    <div id="result"></div>
 
 
-    </div>
 
-  
 
 </body>
+<script src="src/js/index.js"></script>
 
 </html>
