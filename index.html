@@ -1,13 +1,13 @@
+
 <html lang="en">
 
 <head>
     <link rel="stylesheet" href="src/css/main.css">
-    <link rel="stylesheet" href="style.css/bootstrap.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AKAN NAME</title>
-   
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
@@ -33,32 +33,29 @@
         </div>
     </div>
     <div class="container">
+      
         <form>
             <div class="century ">
-                Century (e.g. 19 if yr 1998)<br>
-                <input type="text" placeholder="Enter the century" name="century" id="cc" required min="0"
-                    max="100"><br>
+                Century <br>
+                <input type="text" placeholder="Enter the century" name="century" id="cc" required ><br>
             </div>
             <div class="year of birth">
-                Year of Birth (e.g. 98 if yr 1998)<br>
-                <input type="text" placeholder="Enter year " name="Year of Birth" id="yy" required min="0"
-                    max="2019"><br>
+                Year of Birth <br>
+                <input type="text" placeholder="Enter year " name="Year of Birth" id="yy" required ><br>
             </div>
-            <div class="Month of birth">
-                Month of Birth<br>
-                <input type="text" placeholder="Enter your month" name="Month of Birth" id="mm" required min="0"
-                    max="12"><br>
-            </div>
+             <div class="Month of birth">
+              Month of Birth<br>
+                <input type="text" placeholder="Enter your month" name="Month of Birth" id="mm" ><br>
+             </div>
             <div class="Day of Month">
-                Day of Month <br>
-                <input type="text" placeholder="Enter your Date" name="Date of Month" id="dd" required min="0" max="12">
-            </div>
-            <div class="Your gender" id="gender">
-                Your Gender
-                <input type="radio" name="gender" value="male" id="male"> Male<br>
-                <input type="radio" name="gender" value="female" id="female"> Female<br>
-            </div>
-            <div class="button">
+            Day of Month <br>
+          <input type="text" placeholder="Enter your Date" name="Date of Month" id="dd" >
+         </div>
+           <div id="gender">
+              Gender
+                <input type="checkbox" name="gender" value="male" id="male">male
+                <input type="checkbox" name="gender" value="female" id="female">female<br>
+               </div>
                 <button type="button" onclick="initialiseNameCheck()">Submit</button>
             </div>
         </form>
@@ -72,6 +69,6 @@
 
 
 </body>
-<script src="src/js/index.js"></script>
+<script src="js/index.js"></script>
 
 </html>
