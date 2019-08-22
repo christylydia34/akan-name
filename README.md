@@ -25,7 +25,7 @@ Day of birth -The day of the week that the user was born
   I used the following languages
   -Html5
   - Css
-  * Javascript
+  - Javascript
   * Bootstrap
   
  
