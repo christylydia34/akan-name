@@ -1,29 +1,6 @@
-function validate(century, year, month, dayOfMonth)
-  
-function initialiseNameCheck() {
 
-  var century = parseInt(document.getElementById("cc").value);
-  var year = parseInt(document.getElementById("yy").value);
-  var month = parseInt(document.getElementById("mm").value);
-  var dayOfMonth = parseInt(document.getElementById("dd").value);
 
-  if (document.getElementById("male").checked) {
-    var gender = document.getElementById("male").value
-
-  } else if (document.getElementById("female").checked) {
-    gender = document.getElementById("female").value
-    
-  }
-
-  console.log(gender)
-  if (validate(century, year, month, dayOfMonth)) {
-
-    let dayOfWeek = getDayOfWeek(century, year, month, dayOfMonth)
-    getNameResult(gender, dayOfWeek)
-
-  }
-}  
-  
+function validate(century, year, month, dayOfMonth) {
   valid = true;
   if (century == "") {
     alert("Input the correct gender");
@@ -38,7 +15,7 @@ function initialiseNameCheck() {
     alert("input the correct date");
     return false;
   } else {
-    return valid
+    return valid;
   }
 
 }
@@ -73,9 +50,9 @@ function getNameResult(gender, dayOfWeek) {
         case 4 || -4:
           document.getElementById("result").innerHTML = "The day is on a thursday." + " " + "Your akan name is " + "Yaw";
           break;
-        case (5 || -5):
+        case 5 || -5:
           document.getElementById("result").innerHTML = "The day is on a friday." + " " + "Your akan name is " + "Kofi";
-        case (6 || -6):
+        case 6 || -6:
           document.getElementById("result").innerHTML = "The day is on a saturday." + " " + "Your akan name is " + "Kwame ";
           break;
         default:
@@ -113,6 +90,30 @@ function getNameResult(gender, dayOfWeek) {
       break
     default:
       console.log("none");
+  }
+}
+
+function initialiseNameCheck() {
+
+  var century = parseInt(document.getElementById("cc").value);
+  var year = parseInt(document.getElementById("yy").value);
+  var month = parseInt(document.getElementById("mm").value);
+  var dayOfMonth = parseInt(document.getElementById("dd").value);
+
+  if (document.getElementById("male").checked) {
+    var gender = document.getElementById("male").value
+
+  } else if (document.getElementById("female").checked) {
+    gender = document.getElementById("female").value
+    
+  }
+
+  console.log(gender)
+  if (validate(century, year, month, dayOfMonth)) {
+
+    let dayOfWeek = getDayOfWeek(century, year, month, dayOfMonth)
+    getNameResult(gender, dayOfWeek)
+
   }
 }
 
