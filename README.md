@@ -22,7 +22,7 @@ Day of birth -The day of the week that the user was born
 
  `
 ## Technologies used.
-  * Html5
+  I used  Html5
   * Css
   * Javascript
   * Bootstrap
