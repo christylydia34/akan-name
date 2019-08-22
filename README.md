@@ -26,7 +26,7 @@ Day of birth -The day of the week that the user was born
   -Html5
   - Css
   - Javascript
-  * Bootstrap
+  -Bootstrap
   
  
 
