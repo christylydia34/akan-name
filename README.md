@@ -1,6 +1,5 @@
-#Project Name
-https://github.com/christylydia34/name.git
-
+##Project Name
+https://christylydia34.github.io/akan-name/
 ## Project Description.
  This is a  web application that takes enables  a user's birthday , calculates the day of the week  they were born and their gender and returns corresponding Akan name 
 
